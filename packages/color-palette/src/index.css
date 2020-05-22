@@ -1,0 +1,27 @@
+html {
+  /*min-height: 200px;*/
+}
+html,
+body,
+div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.color-box {
+  display: inline-block;
+  vertical-align: middle;
+  width: 12px;
+  height: 12px;
+  border: 2px solid grey;
+  border-radius: 4px;
+}
+
+.palette-dropdown-wrapper {
+  position: static;
+  max-width: 200px;
+}

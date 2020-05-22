@@ -1,0 +1,22 @@
+{
+  "id": "custom-color-palette",
+  "name": "Color Palette",
+  "srcdoc": "./build/index.html",
+  "fieldTypes": ["Symbol"],
+  "parameters": {
+    "installation": [
+      {
+        "id": "colors",
+        "type": "Symbol",
+        "name": "Colors (Comma separated)"
+      }
+    ],
+    "instance": [
+      {
+        "id": "colors",
+        "type": "Symbol",
+        "name": "Colors (Comma separated, defaults to workspace setting)"
+      }
+    ]
+  }
+}

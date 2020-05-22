@@ -1,0 +1,8 @@
+{
+  "id": "conditional-field",
+  "name": "conditional-field",
+  "srcdoc": "./build/index.html",
+  "fieldTypes": [
+    "Symbol"
+  ]
+}
