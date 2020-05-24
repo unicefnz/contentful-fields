@@ -18,7 +18,7 @@ export const App = ({ sdk }: AppProps) => {
   const [value, setValue] = useState();
   const [open, setOpen] = useState(false);
 
-  const colors = (sdk.parameters.instance.colors || sdk.parameters.installation.colors || '')
+  const colors = ((sdk.parameters.instance as any).colors || (sdk.parameters.installation as any).colors || '')
     .split(',')
     .map((c: string) => c.trim())
     .filter((c: string) => !!c);

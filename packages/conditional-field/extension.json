@@ -1,8 +1,29 @@
 {
   "id": "conditional-field",
-  "name": "conditional-field",
+  "name": "Conditional Field",
   "srcdoc": "./build/index.html",
-  "fieldTypes": [
-    "Symbol"
-  ]
+  "fieldTypes": ["Symbol", "RichText"],
+  "parameters": {
+    "instance": [
+      {
+        "id": "mode",
+        "type": "Enum",
+        "name": "Mode",
+        "options": [
+          {"hide": "Hide on match"},
+          {"show": "Show on match"}
+        ]
+      },
+      {
+        "id": "field",
+        "type": "Symbol",
+        "name": "ID of Field to match on"
+      },
+      {
+        "id": "value",
+        "type": "Symbol",
+        "name": "Field value to match"
+      }
+    ]
+  }
 }
