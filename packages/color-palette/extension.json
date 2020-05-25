@@ -1,7 +1,7 @@
 {
   "id": "custom-color-palette",
   "name": "Color Palette",
-  "srcdoc": "./build/index.html",
+  "srcdoc": "https://unicef-new-zealand.github.io/contentful-fields/color-palette/",
   "fieldTypes": ["Symbol"],
   "parameters": {
     "installation": [

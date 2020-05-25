@@ -1,7 +1,7 @@
 {
   "id": "conditional-field",
   "name": "Conditional Field",
-  "srcdoc": "./build/index.html",
+  "srcdoc": "https://unicef-new-zealand.github.io/contentful-fields/conditional-field/",
   "fieldTypes": ["Symbol", "RichText"],
   "parameters": {
     "instance": [
