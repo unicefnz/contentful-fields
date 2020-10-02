@@ -1,0 +1,30 @@
+{
+  "name": "@unicefnz/contentful-rich-embed-renderer",
+  "version": "1.0.0",
+  "author": "Asher Foster <asher@unicef.org>",
+  "homepage": "https://github.com/unicef-new-zealand/contentful-fields",
+  "private": true,
+  "devDependencies": {
+    "@contentful/contentful-extension-scripts": "0.16.0",
+    "@unicefnz/eslint-config": "^2.0.0",
+    "contentful-cli": "0.33.2",
+    "cssnano": "4.1.10",
+    "eslint": "^7.10.0",
+    "typescript": "^4.0.3"
+  },
+  "scripts": {
+    "start": "contentful-extension-scripts start",
+    "build": "contentful-extension-scripts build",
+    "lint": "eslint ./ --ext .js,.jsx,.ts,.tsx && tsc -p ./ --noEmit",
+    "deploy": "npm run build && contentful extension update --force",
+    "configure": "contentful space use && contentful space environment use"
+  },
+  "dependencies": {
+    "contentful-ui-extensions-sdk": "^3.23.2"
+  },
+  "browserslist": [
+    "last 5 Chrome version",
+    "> 1%",
+    "not ie <= 11"
+  ]
+}

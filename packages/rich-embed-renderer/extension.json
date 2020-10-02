@@ -1,0 +1,22 @@
+{
+  "id": "rich-embed-render",
+  "name": "Rich Embed Renderer",
+  "src": "https://unicef-new-zealand.github.io/contentful-fields/rich-embed-renderer/",
+  "fieldTypes": ["Object"],
+  "parameters": {
+    "installation": [
+      {
+        "id": "iframelyKey",
+        "type": "Symbol",
+        "name": "Iframely API Key (Required)"
+      }
+    ],
+    "instance": [
+      {
+        "id": "urlFieldId",
+        "type": "Symbol",
+        "name": "ID of the field containing the embed URL (Default: url)"
+      }
+    ]
+  }
+}
