@@ -1,6 +1,6 @@
 {
   "name": "@unicefnz/contentful-rich-embed-renderer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Asher Foster <asher@unicef.org>",
   "homepage": "https://github.com/unicef-new-zealand/contentful-fields",
   "private": true,
