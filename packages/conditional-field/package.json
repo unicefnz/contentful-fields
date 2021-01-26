@@ -1,8 +1,8 @@
 {
-  "name": "@unicef-new-zealand/contentful-conditional-field",
+  "name": "@unicefnz/contentful-conditional-field",
   "version": "1.0.1",
-  "author": "Asher Foster <asher@unicef.org>",
-  "homepage": "https://github.com/unicef-new-zealand/contentful-fields",
+  "author": "Asher Foster <asher@unicef.org.nz>",
+  "homepage": "https://github.com/unicefnz/contentful-fields/tree/master/packages/conditional-field#readme",
   "private": true,
   "devDependencies": {
     "@contentful/contentful-extension-scripts": "^0.20.5",

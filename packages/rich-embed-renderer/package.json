@@ -1,8 +1,8 @@
 {
   "name": "@unicefnz/contentful-rich-embed-renderer",
   "version": "1.0.1",
-  "author": "Asher Foster <asher@unicef.org>",
-  "homepage": "https://github.com/unicef-new-zealand/contentful-fields",
+  "author": "Asher Foster <asher@unicef.org.nz>",
+  "homepage": "https://github.com/unicefnz/contentful-fields/tree/master/packages/rich-embed-renderer#readme",
   "private": true,
   "devDependencies": {
     "@contentful/contentful-extension-scripts": "^0.20.5",
