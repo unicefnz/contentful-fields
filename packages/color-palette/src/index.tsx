@@ -15,8 +15,8 @@ interface AppProps {
 const ColorBox = ({ color }: { color: string }) => (<div className="color-box" style={{ background: color }} />);
 
 export const App = ({ sdk }: AppProps) => {
-  const [value, setValue] = useState();
-  const [open, setOpen] = useState(false);
+  const [value, setValue] = useState<string>('');
+  const [open, setOpen] = useState<boolean>(false);
 
   const colors = ((sdk.parameters.instance as any).colors || (sdk.parameters.installation as any).colors || '')
     .split(',')

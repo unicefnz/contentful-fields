@@ -1,12 +1,16 @@
+// This is a workaround for https://github.com/eslint/eslint/issues/3458
+require('@unicefnz/eslint-config/patch');
+
 module.exports = {
   extends: [
-    '@unicefnz/eslint-config/ts-react'
+    // '@contentful/extension',
+    '@unicefnz/eslint-config/react'
   ],
   rules: {
     'import/prefer-default-export': 0
   },
   parserOptions: {
-    project: './tsconfig.json'
+    tsconfigRootDir: __dirname
   },
   ignorePatterns: ['build']
 };

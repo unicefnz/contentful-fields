@@ -46,7 +46,6 @@ function loadElement(sdk: FieldExtensionSDK, root: HTMLDivElement) {
   }
 
   async function fetchEmbed(url: string): Promise<ValidEmbed> {
-    console.debug('Calling API');
     const r = await fetch(`https://cdn.iframe.ly/api/oembed?api_key=${iframelyKey}&url=${encodeURIComponent(url)}`);
 
     const resp = await r.json() as OEmbed;

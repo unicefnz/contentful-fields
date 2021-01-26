@@ -36,22 +36,19 @@ export const App = ({ sdk }: AppProps) => {
   }, []);
 
   if (!matchMode) return (<p>Match Mode must be configured</p>);
-  if (disabled) return (
-    <p className="smallText">{[
-      'This field is disabled because',
-      sdk.contentType.fields.find(f => f.id === matchField)?.name,
-      matchMode === 'hide' ? 'is' : 'isn\'t',
-      matchValue
-    ].join(' ')}</p>
-  );
+  if (disabled) {
+    return (
+      <p className="smallText">
+        This field is disabled because {sdk.contentType.fields.find(f => f.id === matchField)?.name} {matchMode === 'hide' ? 'is' : 'isn\'t'} {matchValue}
+      </p>
+    );
+  }
 
   if (error) return <p>{error}</p>;
 
-  if (sdk.field.type === 'Symbol') {
-    return <SingleLineEditor isInitiallyDisabled={false} field={sdk.field} locales={sdk.locales} />
-  } else if (sdk.field.type === 'RichText') {
-    return <RichTextEditor sdk={sdk} />
-  } else return <p>This field type is not supported</p>;
+  if (sdk.field.type === 'Symbol') return <SingleLineEditor isInitiallyDisabled={false} field={sdk.field} locales={sdk.locales} withCharValidation={false} />;
+  if (sdk.field.type === 'RichText') return <RichTextEditor sdk={sdk} />;
+  return <p>This field type is not supported</p>;
 };
 
 init((sdk) => {
